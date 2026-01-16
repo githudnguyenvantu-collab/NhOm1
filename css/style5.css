@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  color: #2f8bb9;
+  background: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* ===== HEADER ===== */
+.top-banner {
+  background: linear-gradient(to bottom, #4f44a6, #4143c3);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: red;
+}
+.header {
+  background: linear-gradient(to bottom,rgb(139, 121, 209), #eef4f9);
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration:none;
+}
+.logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #f27878;
+}
+.logo-text h1 { 
+  font-size: 40px;
+  font-weight:900;
+  background: linear-gradient(to bottom, #4f44a6, #7d2222);
+  background-clip:text;
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+}
+.search-bar {
+  flex:1;
+  max-width: 800px;
+  padding:8px;
+  display: flex;
+  background: #dcd0d0;
+  border:2px solid #667eea;
+  border-radius: 50px;
+}
+.search-bar input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background: none;
+}
+.search-bar button {
+  padding: 12px 20px;
+  background: linear-gradient(to bottom, #7d60b8, #4143c3);
+  color: #f6ebeb;
+  border-radius: 40px;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cart-btn {
+  padding: 18px 25px;
+  background: linear-gradient(to bottom, #4f44a6, #4143c3);
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  gap: 8px;
+}
+.user-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border:2px solid rgb(140, 75, 198);
+  background: linear-gradient(to bottom, #a38fe5, #0b20ff);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+/* ===== NAVIGATION ===== */
+.main-nav {
+  background: linear-gradient(to bottom, #4f44a6, #4143c3);
+  overflow-x: auto;
+}
+.nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.nav-item {
+  flex: 1;
+  min-width: 100px;
+}
+.nav-link {
+  display: block;
+  padding: 30px 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+/* ===== BANNER SỰ KIỆN ===== */
+.banner-su-kien {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner-su-kien img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lop-phu-banner {
+  position: absolute;
+  inset: 0;
+  background: rgba(47, 12, 94, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* ===== THẺ DỊCH VỤ ===== */
+.the-dich-vu {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.the-dich-vu:hover {
+  transform: translateY(-10px);
+}
+.anh-dich-vu {
+  height: 200px;
+  overflow: hidden;
+}
+.anh-dich-vu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.the-dich-vu:hover .anh-dich-vu img {
+  transform: scale(1.1);
+}
+.noi-dung-the {
+  padding: 20px;
+  text-align: center;
+}
+.noi-dung-the h3 {
+  color: #4f44a6;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.noi-dung-the p {
+  color: #666;
+}
+.bieu-tuong-tron {
+  width: 60px;
+  height: 60px;
+  background: #4f44a6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: -50px auto 15px;
+  position: relative;
+  border: 4px solid white;
+}
+/* ===== DANH SÁCH WORKSHOP ===== */
+.dong-su-kien {
+  background: white;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.dong-su-kien:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #4f44a6;
+}
+.hop-ngay-thang {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #4f44a6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.so-ngay {
+  font-size: 30px;
+  font-weight: 900;
+  color: #4f44a6;
+}
+.chu-thang {
+  background: #4f44a6;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 0;
+}
+.nut-dang-ky {
+  background-color: #4f44a6;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.nut-dang-ky:hover {
+  background-color: #382e85;
+}
+/* ===== FOOTER ===== */
+.footer {
+  padding: 40px 20px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 20px 20px 0 0;
+  background: url('https://png.pngtree.com/background/20230410/original/pngtree-beautiful-flowers-cartoon-nature-background-of-flowers-plant-field-picture-image_2385639.jpg') center/cover;
+  border:4px solid rgb(0, 0, 0);
+}
+.footer-section {
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #667eea;
+}
+.footer-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: rgb(21, 20, 20);
+}
+.footer-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+.footer-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #000;
+}
+.footer-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.badge-img {
+  height: 40px;
+  border-radius: 6px;
+}
+.footer-list,
+.footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-list li,
+.footer-contact li {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #d81b1b;
+}
+.footer-list li i,
+.footer-contact li i {
+  min-width: 20px;
+  margin-top: 2px;
+  font-size: 16px;
+  color: #667eea;
+}
+.footer-list strong,
+.footer-contact strong {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+}
+.footer-list span,
+.footer-contact span {
+  display: block;
+  font-size: 18px;
+  color: #f00b0b;
+}
+.footer-contact a {
+  display: block;
+  margin-top: 2px;
+  font-size: 18px;
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-contact a:hover {
+  color: #4f44a6;
+  text-decoration: underline;
+}
+.social-links { 
+  margin-top: 20px; 
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.social-icon.icon {
+   background: rgb(255, 255, 255);
+   color:#d52323;
+   border:4px solid rgb(255, 0, 0);
+   font-size:20px;
+}
+/* ===== BACK TO TOP ===== */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 30%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #667eea;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 6px 16px #667eea59;
+}
+.back-to-top.show {
+  display: flex;
+}
+/* ===== TABLET (≤ 992px) ===== */
+@media (max-width: 992px) {
+  .banner-su-kien {
+     height: 300px; 
+}
+.lop-phu-banner h2 {
+     font-size: 30px; 
+}
+.lop-phu-banner p  {
+     font-size: 16px; 
+}
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+  }
+}
+/* ===== MOBILE (≤ 768px) ===== */
+@media (max-width: 768px) {
+  .logo img {
+    width: 60px;
+    height: 60px; 
+}
+.logo-text h1 {
+     font-size: 22px; 
+}
+.search-bar {
+    width: 100%;
+    order: 3;
+  }
+
+.cart-btn,
+.user-icon {
+    font-size: 14px;
+}
+  .nav-link {
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+.banner-su-kien {
+     height: 250px; 
+}
+.lop-phu-banner h2 {
+     font-size: 22px; 
+}
+.lop-phu-banner p  {
+     font-size: 14px; 
+}
+.dong-su-kien {
+    padding: 15px;
+}
+.footer {
+    padding: 30px 15px;
+  }
+}
+/* ===== SMALL MOBILE (≤ 480px) ===== */
+@media (max-width: 480px) {
+.logo img {
+    width: 50px;
+    height: 50px; 
+}
+.logo-text h1 {
+     font-size: 18px; 
+}
+.banner-su-kien {
+     height: 200px; 
+}
+.lop-phu-banner h2 {
+     font-size: 18px; 
+}
+.lop-phu-banner p  {
+     font-size: 12px; 
+}
+  .dong-su-kien {
+    flex-direction: column;
+    text-align: center;
+  }
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    right: 12px;
+    bottom: 12px;
+  }
+}

@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  color: #2f8bb9;
+  background: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* ===== HEADER ===== */
+.top-banner {
+  background: linear-gradient(to bottom, #4f44a6, #4143c3);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: red;
+}
+.header {
+  background: linear-gradient(to bottom,rgb(139, 121, 209), #eef4f9);
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration:none;
+}
+.logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #f27878;
+}
+.logo-text h1 { 
+  font-size: 40px;
+  font-weight:900;
+  background: linear-gradient(to bottom, #4f44a6, #7d2222);
+  background-clip:text;
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+}
+.search-bar {
+  flex:1;
+  max-width: 800px;
+  padding:8px;
+  display: flex;
+  background: #dcd0d0;
+  border:2px solid #667eea;
+  border-radius: 50px;
+}
+.search-bar input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background: none;
+}
+.search-bar button {
+  padding: 12px 20px;
+  background: linear-gradient(to bottom, #7d60b8, #4143c3);
+  color: #f6ebeb;
+  border-radius: 40px;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cart-btn {
+  padding: 18px 25px;
+  background: linear-gradient(to bottom, #4f44a6, #4143c3);
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  gap: 8px;
+}
+.user-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border:2px solid rgb(140, 75, 198);
+  background: linear-gradient(to bottom, #a38fe5, #0b20ff);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+/* ===== NAVIGATION ===== */
+.main-nav {
+  background: linear-gradient(to bottom, #4f44a6, #4143c3);
+  overflow-x: auto;
+}
+.nav-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.nav-item {
+  flex: 1;
+  min-width: 100px;
+}
+.nav-link {
+  display: block;
+  padding: 30px 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ===========================
+   PAGE TITLE
+   =========================== */
+.page-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 20px;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+}
+.page-title h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  margin:0;
+}
+/* ===========================
+   ABOUT CONTENT
+   =========================== */
+.about-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+ .about-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 50px 40px;
+  background: #f9fafc;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  border:9px solid #9d98cc
+}
+/* Text */
+.about-text h2 {
+  color: #4b5bdc;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about-text p {
+  color: #34495e;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-text strong {
+  color: #4b5bdc;
+}
+.about-text em {
+  color: #e17055;
+  font-style: normal;
+}
+
+/* Motto */
+.about-text .motto {
+  padding: 16px 20px;
+  border-left: 4px solid #4b5bdc;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3436;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+/* Image */
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border:10px solid rgb(36, 97, 218);
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Button */
+.btn-explore {
+  padding: 14px 36px;
+  background: linear-gradient(to right, #110672, #04240f);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.btn-explore:hover {
+  background: #3644c9;
+  color:rgb(0, 0, 0);
+}
+/* ===========================
+   HISTORY SECTION
+   =========================== */
+.history-section {
+  padding: 50px 30px;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  border:9px solid rgb(239, 206, 97);
+}
+.history-section h2 {
+  color: #e17055;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.history-content p {
+  color: #2d3436;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+.history-content strong {
+  color: #d63031;
+  font-weight: 600;
+}
+.history-motto {
+  padding: 18px 24px;
+  border-left: 4px solid #d63031;
+  background: #fdf3f1;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3436;
+  margin-top: 25px;
+  text-align: center;
+}
+/* ===========================
+   MOMENTS BANNER
+   =========================== */
+.moments-banner {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #cca42d, #15d4c8);
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  border:2px solid rgb(0, 0, 0);
+}
+.banner-label {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.banner-label span {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.moments-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Linh hoạt hơn cho mobile */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.moments-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Linh hoạt hơn cho mobile */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.moment-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #0002;
+  transition: transform 0.4s, box-shadow 0.4s;
+  background: #ff5e00; 
+}
+.moment-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 50%, rgba(244, 11, 11, 0.7));
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.moment-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.moment-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(212, 171, 171, 0.4);
+}
+.moment-card:hover::before {
+  opacity: 1;
+}
+.moment-card:hover img {
+  transform: scale(1.1);
+}
+/* ===== FOOTER ===== */
+.footer {
+  padding: 40px 20px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 20px 20px 0 0;
+  background: url('https://png.pngtree.com/background/20230410/original/pngtree-beautiful-flowers-cartoon-nature-background-of-flowers-plant-field-picture-image_2385639.jpg') center/cover;
+  border:4px solid rgb(0, 0, 0);
+}
+.footer-section { 
+  margin-bottom:20px;
+}
+.footer-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #667eea;
+}
+.footer-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color:rgb(21, 20, 20);
+}
+.footer-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+.footer-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #000;
+}
+.footer-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.badge-img {
+  height: 40px;
+  border-radius: 6px;
+}
+.footer-list,
+.footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-list li,
+.footer-contact li {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #d81b1b;
+}
+.footer-list li i,
+.footer-contact li i {
+  min-width: 20px;
+  margin-top: 2px;
+  font-size: 16px;
+  color: #667eea;
+}
+.footer-list strong,
+.footer-contact strong {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #000;
+  font-size: 20px;
+}
+.footer-list span,
+.footer-contact span {
+  display: block;
+  font-size: 18px;
+  color: #f00b0b;
+}
+.footer-contact a {
+  display: block;
+  margin-top: 2px;
+  font-size: 18px;
+  color: #667eea;
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px #160896;
+}
+.social-links { 
+  margin-top: 20px; 
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.social-icon.icon {
+   background: rgb(255, 255, 255);
+   color:#d52323;
+   border:4px solid rgb(255, 0, 0);
+   font-size:20px;
+}
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 30%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #667eea;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 6px 16px #667eea59;
+}
+.back-to-top.show {
+  display: flex;
+}
+/* =========================================
+   RESPONSIVE DESIGN - ĐỊNH DẠNG RÕ RÀNG
+   ========================================= */
+@media (max-width: 991px) {
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 30px;
+    }
+
+    .image-circle {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+    }
+    .moments-gallery {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .history-section {
+        padding: 40px 25px;
+    }
+}
+@media (max-width: 767px) {
+    .logo-text h1 {
+        font-size: 24px;
+    }
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .header-container {
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .search-bar {
+        order: 3;
+        width: 100%;
+        max-width: none;
+    }
+    .nav-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 12px 15px;
+        white-space: nowrap;
+    }
+    .page-title {
+        padding: 40px 20px;
+    }
+
+    .page-title h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    .about-text h2 {
+        font-size: 24px;
+    }
+    .about-text p, 
+    .history-content p {
+        font-size: 15px;
+    }
+    .about-text .motto, 
+    .history-motto {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    .image-circle {
+        width: 220px;
+        height: 220px;
+    }
+    .btn-explore {
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+    .history-section h2 {
+        font-size: 26px;
+    }
+    .banner-label span {
+        font-size: 20px;
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+    .footer-title {
+        font-size: 28px;
+    }
+}
