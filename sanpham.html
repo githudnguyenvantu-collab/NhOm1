@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="King of Flower - Shop hoa tươi cao cấp, đa dạng sản phẩm cho mọi dịp">
+    <title>Sản phẩm - King of Flower</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+   <!--BANNER-->
+    <div class="top-banner">
+        CHÀO MỪNG BẠN ĐẾN VỚI GIAN HÀNG CỦA CHÚNG TÔI
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1>King of Flower</h1>
+                </div>
+            </a>
+            <div class="search-bar" role="search">
+                <input type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button type="button" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="header-actions"> 
+                <a href="tel:13004567" class="cart-btn"><i class='fa-solid fa-phone'></i> 13004567</a>
+                 <div class="user-icon"><a href="taikhoan.html"><i class="fa-solid fa-user"></i></a></div>     
+            </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li class="nav-item"><a href="sanpham.html" class="nav-link"><i class="fas fa-spa"></i> Sản phẩm</a></li>
+                <li class="nav-item"><a href="thucvat.html" class="nav-link"><i class="fas fa-tree"></i> Thực vật</a></li>
+                <li class="nav-item"><a href="giohang.html" class="nav-link"><i class="fas fa-cart-shopping"></i> Giỏ hàng</a></li>
+                <li class="nav-item"><a href="gioithieu.html" class="nav-link"><i class="fas fa-book"></i> Giới thiệu</a></li>
+                <li class="nav-item"><a href="sukien.html" class="nav-link"><i class="fas fa-calendar"></i> Sự kiện</a></li>
+                <li class="nav-item"><a href="uudai.html" class="nav-link"><i class="fas fa-crown"></i> Ưu đãi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="two-column-hero-layout" id="home">
+        <div class="content-column">
+            <div class="hero-content">
+                <p class="hero-text">Tại King of Flower, chúng tôi tự hào mang đến một thế giới hoa tươi đầy sắc màu và cảm xúc. Từ những đóa hồng kiêu sa, ly thanh khiết, cẩm chướng rực rỡ cho đến hoa baby nhẹ nhàng hay lan cao quý, mỗi loại hoa đều được chọn lựa kỹ lưỡng để đảm bảo độ tươi và vẻ đẹp hoàn hảo. Dù bạn muốn gửi gắm tình yêu, lời cảm ơn, hay niềm chúc phúc, King of Flower luôn có một bó hoa dành riêng cho cảm xúc của bạn.</p>
+                <div class="hero-buttons">
+                    <button class="btn-learn-more">Tìm hiểu thêm</button>
+                    <button class="btn-view-more">Xem thêm</button>
+                </div>
+            </div>
+        </div>
+        <div class="video-column">
+            <iframe 
+                class="youtube-video-embed" 
+                src="https://www.youtube.com/embed/OoSzt2Ga8Oc" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media; fullscreen"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <!-- SẢN PHẨM DỊP ĐẶC BIỆT -->
+    <section class="products-section special-occasions" id="products">
+        <div class="section-box">
+            <h2>
+                <i class="fas fa-gifts"></i>
+                <span>Hoa Dịp Đặc Biệt</span>
+            </h2>
+        </div>
+        <div class="products-grid">
+            <article class="product-card">
+                <img src="img/hinh1.png" alt="Bó hoa cúc mặt trời">
+                <div class="product-info">
+                    <h3>Bó hoa cúc mặt trời tuyết liên rực rỡ</h3>
+                    <p class="price">225.000 vnđ</p>
+                    <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh2.png" alt="Hoa hồng trắng">
+                <div class="product-info">
+                    <h3>Hoa hồng trắng tuyết</h3>
+                    <p class="price">455.999 vnđ</p>
+                     <button class="add-to-cart">Mua </button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh3.png" alt="Hoa hồng pháp">
+                <div class="product-info">
+                    <h3>Bó hoa hồng lãng mạn kiểu pháp</h3>
+                    <p class="price">550.000 vnđ</p>
+                    <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh4.png" alt="Bó hồng dịu dàng">
+                <div class="product-info">
+                    <h3>Bó hồng xinh tươi dịu dàng</h3>
+                    <p class="price">485.555 vnđ</p>
+                    <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh5.png" alt="Hoa cúc trắng">
+                <div class="product-info">
+                    <h3>Bó hoa cúc trắng tinh khiết</h3>
+                    <p class="price">355.899 vnđ</p>
+                    <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh6.png" alt="Hoa hồng nhiều cánh">
+                <div class="product-info">
+                    <h3>Hoa hồng nhiều cánh</h3>
+                    <p class="price">699.000 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh7.png" alt="90 bông hồng">
+                <div class="product-info">
+                    <h3>Bó hoa hồng 90 bông</h3>
+                    <p class="price">600.000 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh8.png" alt="Hồng tươi thắm">
+                <div class="product-info">
+                    <h3>Hoa hồng tươi thắm</h3>
+                    <p class="price">455.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- HOA TRANG TRÍ NHÀ -->
+    <section class="products-section home-decoration" id="plants">
+        <div class="section-box">
+            <h2>
+                <i class="fas fa-home"></i>
+                <span>Hoa Trang Trí Nhà</span>
+            </h2>
+        </div>
+        <div class="products-grid">
+            <article class="product-card">
+                <img src="img/hinh19.png" alt="Chậu hoa hồng">
+                <div class="product-info">
+                    <h3>Chậu hoa hồng đắm thắm</h3>
+                    <p class="price">976.855 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh20.png" alt="Chậu hoa tulip">
+                <div class="product-info">
+                    <h3>Chậu hoa tulip đầy quyến rũ</h3>
+                    <p class="price">2.567.289 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh21.png" alt="Hoa hồng vàng tím">
+                <div class="product-info">
+                    <h3>Chậu hoa hồng vàng tím</h3>
+                    <p class="price">1.056.456 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh22.png" alt="Mộc lan hồng">
+                <div class="product-info">
+                    <h3>Chậu hoa mộc lan hồng</h3>
+                    <p class="price">999.678 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh23.png" alt="Chậu hoa mộc lan">
+                <div class="product-info">
+                    <h3>Chậu hoa mộc lan trắng</h3>
+                    <p class="price">1.589.777 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh24.png" alt="CYMBIDIUM">
+                <div class="product-info">
+                    <h3>Chậu cây Polyester CYMBIDIUM</h3>
+                    <p class="price">2.550.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh25.png" alt="CYMBIDIUM">
+                <div class="product-info">
+                    <h3>Chậu hoa nhân tạo để bàn</h3>
+                    <p class="price">3.559.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh26.png" alt="CYMBIDIUM">
+                <div class="product-info">
+                    <h3>Chậu cây hoa hồng</h3>
+                    <p class="price">1.570.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- HOA SỰ KIỆN -->
+    <section class="products-section event-flowers" id="events">
+        <div class="section-box">
+            <h2>
+               <i class="fa-solid fa-location-dot"></i>
+               <span>Hoa Sự Kiện</span>
+            </h2>
+        </div>
+        
+        <div class="products-grid">
+            <article class="product-card">
+                <img src="img/hinh27.png" alt="Hoa ngũ sắc">
+                <div class="product-info">
+                    <h3>Bó hoa ngũ sắc dành cho sự kiện</h3>
+                    <p class="price">1.952.345 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh28.png" alt="Hoa cưới">
+                <div class="product-info">
+                    <h3>Hoa hồng đắm thắm cho tiệc cưới</h3>
+                    <p class="price">789.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh29.png" alt="Hoa hồng vàng hồng">
+                <div class="product-info">
+                    <h3>Chậu hoa hồng màu vàng hồng</h3>
+                    <p class="price">1.056.456 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh30.png" alt="Hoa may mắn">
+                <div class="product-info">
+                    <h3>Bó hoa may mắn đầy sức sống</h3>
+                    <p class="price">3.999.678 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh31.png" alt="Hoa hồng đầy đặn">
+                <div class="product-info">
+                    <h3>Chậu hoa hồng đầy đặn</h3>
+                    <p class="price">1.234.500 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh32.png" alt="Hoa nhiều màu">
+                <div class="product-info">
+                    <h3>Bó hoa đầy đặn nhiều màu sắc</h3>
+                    <p class="price">3.899.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh33.png" alt="Hoa nhiều màu">
+                <div class="product-info">
+                    <h3>Bó hoa sinh nhật garden</h3>
+                    <p class="price">2.500.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="img/hinh34.png" alt="Hoa nhiều màu">
+                <div class="product-info">
+                    <h3>Bó hoa sự kiện vinh quang tỏa sáng</h3>
+                    <p class="price">4.999.999 vnđ</p>
+                     <button class="add-to-cart"> Mua</button>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- CÁC NGÀY ĐẶC BIỆT -->
+    <section class="special-dates" id="offers">
+        <div class="section-box">
+            <h2>
+                <i class="fa-solid fa-mug-hot"></i>
+                <span>Các Ngày Đặc Biệt</span>
+            </h2>
+        </div>
+
+        <div class="dates-wrapper">
+            <div class="date-circle">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.uoVKy9h0twa2w3HlwDHUgQHaEK?pid=Api&P=0&h=180" alt="Ngày Phụ nữ Việt Nam 20/10">
+                <span class="date-info"><i class="fa-solid fa-ticket"></i> Giảm 25%</span>
+                <span class="date-label" data-event="Ngày Phụ Nữ Việt Nam">20/10</span>
+            </div>
+            
+            <div class="date-circle">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.3BbMN46POoVeSMJroxXaTQHaEa?pid=Api&P=0&h=180" alt="Ngày Nhà giáo Việt Nam 20/11">
+                <span class="date-info"><i class="fa-solid fa-window-maximize"></i> Ưu đãi đặc biệt</span>
+                <span class="date-label orange" data-event="Ngày Nhà Giáo">20/11</span>
+            </div>
+            
+            <div class="date-circle">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.lKBAhbXyGumoPW4iclGV2QHaEH?pid=Api&P=0&h=180" alt="Ngày Quốc tế Phụ nữ 8/3">
+                <span class="date-info"><i class="fa-brands fa-bandcamp"></i> Sale lớn</span>
+                <span class="date-label green" data-event="Quốc Tế Phụ Nữ">8/3</span>
+            </div>
+            
+            <div class="date-circle more">
+                <span class="more-dots">• • •</span>
+            </div>
+        </div>
+    </section>
+    <!-- GIỚI THIỆU -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="section-box">
+                <h2>
+                    <i class="fas fa-store"></i>
+                    <span>King of Flower Service</span>
+                </h2>
+            </div>
+            
+            <p>Tại King of Flower, mỗi sản phẩm không chỉ là một bó hoa - mà là một thông điệp yêu thương được gửi gắm bằng cả trái tim. Chúng tôi mang đến đa dạng lựa chọn:</p>
+            
+            <ul class="product-types">
+                <li><i class="fas fa-birthday-cake"></i> <strong>Hoa sinh nhật</strong> - tươi tắn, rực rỡ cho ngày đặc biệt.</li>
+                <li><i class="fas fa-heart"></i> <strong>Hoa tình yêu</strong> - biểu tượng cho cảm xúc chân thành và lãng mạn.</li>
+                <li><i class="fas fa-champagne-glasses"></i> <strong>Hoa chúc mừng</strong> - khai trương - sự kiện - sang trọng, tinh tế.</li>
+                <li><i class="fa-regular fa-face-sad-tear"></i> <strong>Hoa chia buồn</strong> - tưởng niệm - trang nhã, thể hiện sự trân trọng.</li>
+                <li><i class="fas fa-palette"></i> <strong>Hoa nghệ thuật</strong> - bó hoa độc quyền với phong cách King of Flower.</li>
+            </ul>
+            
+            <p>Mỗi mẫu hoa đều được đội ngũ nghệ nhân của chúng tôi chăm chút tỉ mỉ, từ chất lượng bông hoa, màu sắc đến cách gói - để khi bạn tặng, người nhận sẽ cảm nhận sự tinh tế và tâm ý chân thành.</p>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 faq-title">CÂU HỎI THƯỜNG GẶP</h2>
+
+        <div class="faq-list mx-auto" style="max-width: 800px;">
+            <div class="faq-item mb-3">Tôi có thể nhận hoa trong ngày không?</div>
+            <div class="faq-item mb-3">Làm cách nào để đặt hoa trực tuyến?</div>
+            <div class="faq-item mb-3">Cách mua được giá tốt nhất?</div>
+            <div class="faq-item mb-3">Các mẹo để chọn hoa phù hợp?</div>
+            <div class="faq-item mb-3">Làm sao để liên hệ chăm sóc khách hàng?</div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+                    <div class="footer-logo mb-3">
+                        <img src="img/logo.png" alt="King of Flower Logo">
+                    </div>
+                    <h3 class="footer-title">King of Flower</h3>
+                    <p class="footer-desc">
+                        Mang đến những bó hoa tươi đẹp nhất, 
+                        lan tỏa yêu thương đến mọi người.
+                    </p>
+                    <div class="footer-badges mt-3">
+                        <img src="img/footer1.png" alt="Free Ship" class="badge-img">
+                        <img src="img/footer2.png" alt="24/7" class="badge-img">
+                        <img src="img/footer3.png" alt="contact" class="badge-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fa-solid fa-store"></i> Chi nhánh
+                    </h3>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>TP Vinh</strong>
+                                <span>Số 12, ngõ 12, Nguyễn Văn Trỗi</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>TP HCM</strong>
+                                <span>Quận 8, Nguyễn Du</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>Hà Nội</strong>
+                                <span>Quận Đống Đa</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>Đà Nẵng</strong>
+                                <span>Số 32, ngõ 8, Nguyễn Trãi</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fa-solid fa-headset"></i> Liên hệ
+                    </h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div>
+                                <strong>Hotline</strong>
+                                <a href="tel:0304637737">0304.637.737</a>
+                                <a href="tel:0263733937">0263.733.937</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:kingofflower@gmail.com">kingofflower@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                <strong>Giờ làm việc</strong>
+                                <span>8:00 - 22:00 (Hàng ngày)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links mt-4">
+                        <h4 class="footer-subtitle">
+                            <i class="fa-solid fa-share-nodes"></i> Kết nối với chúng tôi
+                        </h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/1BgTdbTobV/" class="social-icon icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="Zalo">
+                                <i class="fa-solid fa-z"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <button class="back-to-top" id="backToTop" aria-label="Quay lên đầu trang">
+            <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/chung.js"></script>
+     <script src="js/sanpham.js"></script>
+</body>
+</html>

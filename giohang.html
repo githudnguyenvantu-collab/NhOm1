@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giỏ hàng - King of Flower">
+    <title>Giỏ Hàng - King of Flower</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        CHÀO MỪNG BẠN ĐẾN VỚI GIAN HÀNG CỦA CHÚNG TÔI
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1>King of Flower</h1>
+                </div>
+            </a>
+            <div class="search-bar" role="search">
+                <input type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button type="button" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="header-actions"> 
+                <a href="tel:13004567" class="cart-btn"><i class='fa-solid fa-phone'></i> 13004567</a>
+                 <div class="user-icon"><a href="taikhoan.html"><i class="fa-solid fa-user"></i></a></div>     
+            </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li class="nav-item"><a href="sanpham.html" class="nav-link"><i class="fas fa-spa"></i> Sản phẩm</a></li>
+                <li class="nav-item"><a href="thucvat.html" class="nav-link"><i class="fas fa-tree"></i> Thực vật</a></li>
+                <li class="nav-item"><a href="giohang.html" class="nav-link"><i class="fas fa-cart-shopping"></i> Giỏ hàng</a></li>
+                <li class="nav-item"><a href="gioithieu.html" class="nav-link"><i class="fas fa-book"></i> Giới thiệu</a></li>
+                <li class="nav-item"><a href="sukien.html" class="nav-link"><i class="fas fa-calendar"></i> Sự kiện</a></li>
+                <li class="nav-item"><a href="uudai.html" class="nav-link"><i class="fas fa-crown"></i> Ưu đãi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1><i class="fas fa-shopping-cart"></i> Giỏ Hàng</h1>
+            <p>Bạn có <strong>2 sản phẩm</strong> trong giỏ hàng</p>
+        </div>
+        <div class="cart-layout">
+            <!-- Cart Items with Individual Shipping Info -->
+            <div class="cart-main-section">
+                <div class="cart-item-wrapper">
+                    <div class="cart-item">
+                        <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=300&h=350&fit=crop" alt="Chậu hoa hồng" class="item-image">
+                        <div class="item-info">
+                            <h3>Chậu hoa hồng kiểu pháp</h3>
+                            <p class="item-price">899,765 vnđ</p>
+                            <p class="item-status"><i class="fa-solid fa-check-circle"></i> Còn hàng</p>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn qty-minus">-</button>
+                                <span class="qty-display">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <button class="toggle-btn" onclick="toggleSection('shipping-1')">
+                        <i class="fa-solid fa-truck"></i> Thông tin giao hàng
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </button>
+                    <div class="shipping-info collapsed" id="shipping-1">
+                        <div class="form-group">
+                            <label for="customer-name-1">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="customer-name-1" name="customer-name-1" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone-1">Số điện thoại <span class="required">*</span></label>
+                            <input type="tel" id="customer-phone-1" name="customer-phone-1" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-address-1">Địa chỉ giao hàng <span class="required">*</span></label>
+                            <textarea id="customer-address-1" name="customer-address-1" rows="3" placeholder="Nhập địa chỉ chi tiết" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="shipping-method-1">Phương thức giao hàng</label>
+                            <select id="shipping-method-1" name="shipping-method-1">
+                                <option value="standard">Giao hàng tiêu chuẩn (3-5 ngày) - 30,000 vnđ</option>
+                                <option value="fast">Giao hàng nhanh (1-2 ngày) - 50,000 vnđ</option>
+                                <option value="express">Giao hàng hỏa tốc (trong ngày) - 80,000 vnđ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-wrapper">
+                    <div class="cart-item">
+                        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=300&h=350&fit=crop" alt="Cây đào đỏ" class="item-image">
+                        <div class="item-info">
+                            <h3>Cây đào đỏ</h3>
+                            <p class="item-price">19,500,999 vnđ</p>
+                            <p class="item-status"><i class="fa-solid fa-check-circle"></i> Còn hàng</p>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn qty-minus">-</button>
+                                <span class="qty-display">1</span>
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                            <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <button class="toggle-btn" onclick="toggleSection('shipping-2')">
+                        <i class="fa-solid fa-truck"></i> Thông tin giao hàng
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </button>
+                    <div class="shipping-info collapsed" id="shipping-2">
+                        <div class="form-group">
+                            <label for="customer-name-2">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="customer-name-2" name="customer-name-2" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone-2">Số điện thoại <span class="required">*</span></label>
+                            <input type="tel" id="customer-phone-2" name="customer-phone-2" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-address-2">Địa chỉ giao hàng <span class="required">*</span></label>
+                            <textarea id="customer-address-2" name="customer-address-2" rows="3" placeholder="Nhập địa chỉ chi tiết" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="shipping-method-2">Phương thức giao hàng</label>
+                            <select id="shipping-method-2" name="shipping-method-2">
+                                <option value="standard">Giao hàng tiêu chuẩn (3-5 ngày) - 30,000 vnđ</option>
+                                <option value="fast">Giao hàng nhanh (1-2 ngày) - 50,000 vnđ</option>
+                                <option value="express">Giao hàng hỏa tốc (trong ngày) - 80,000 vnđ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h2>Tóm tắt đơn hàng</h2>
+                <div class="summary-row">
+                    <span>Tạm tính</span>
+                    <span>20,400,764 vnđ</span>
+                </div>
+                <div class="summary-row">
+                    <span>Phí vận chuyển</span>
+                    <span>30,000 vnđ</span>
+                </div>
+                <div class="summary-row discount">
+                    <span>Giảm giá</span>
+                    <span>-50,000 vnđ</span>
+                </div>
+                <div class="summary-total">
+                    <span>Tổng cộng</span>
+                    <span>20,380,764 vnđ</span>
+                </div>
+                
+                <button class="btn-checkout">
+                    <i class="fa-solid fa-credit-card"></i> Thanh toán
+                </button>
+                <button class="btn-continue">
+                    <i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+                    <div class="footer-logo mb-3">
+                        <img src="img/logo.png" alt="King of Flower Logo">
+                    </div>
+                    <h3 class="footer-title">King of Flower</h3>
+                    <p class="footer-desc">
+                        Mang đến những bó hoa tươi đẹp nhất, 
+                        lan tỏa yêu thương đến mọi người.
+                    </p>
+                    <div class="footer-badges mt-3">
+                        <img src="img/footer1.png" alt="Free Ship" class="badge-img">
+                        <img src="img/footer2.png" alt="24/7" class="badge-img">
+                        <img src="img/footer3.png" alt="contact" class="badge-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fa-solid fa-store"></i> Chi nhánh
+                    </h3>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>TP Vinh</strong>
+                                <span>Số 12, ngõ 12, Nguyễn Văn Trỗi</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>TP HCM</strong>
+                                <span>Quận 8, Nguyễn Du</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>Hà Nội</strong>
+                                <span>Quận Đống Đa</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            <div>
+                                <strong>Đà Nẵng</strong>
+                                <span>Số 32, ngõ 8, Nguyễn Trãi</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fa-solid fa-headset"></i> Liên hệ
+                    </h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div>
+                                <strong>Hotline</strong>
+                                <a href="tel:0304637737">0304.637.737</a>
+                                <a href="tel:0263733937">0263.733.937</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:kingofflower@gmail.com">kingofflower@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                <strong>Giờ làm việc</strong>
+                                <span>8:00 - 22:00 (Hàng ngày)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links mt-4">
+                        <h4 class="footer-subtitle">
+                            <i class="fa-solid fa-share-nodes"></i> Kết nối với chúng tôi
+                        </h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/1BgTdbTobV/" class="social-icon icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="social-icon icon" aria-label="Zalo">
+                                <i class="fa-solid fa-z"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <button class="back-to-top" id="backToTop" aria-label="Quay lên đầu trang">
+            <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="js/giohang.js"></script>
+<script src="js/chung.js"></script>
+</body>
+</html>
